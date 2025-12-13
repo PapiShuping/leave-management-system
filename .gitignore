@@ -1,0 +1,43 @@
+# Visual Studio
+.vs/
+*.user
+*.Studio
+bin/
+obj/
+*.cache
+
+# .NET
+*.dll
+*.exe
+*.pdb
+[Dd]ebug/
+[Rr]elease/
+
+# Entity Framework
+Migrations/
+
+# User secrets
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+
+# Database
+*.mdf
+*.ldf
+
+# Flutter 
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/android/app/*.jks
+
+# IDE
+.vscode/
+.idea/
+
+# DS
+.DS_Store
+Thumbs.db 
+
+# Logs
+*.log
