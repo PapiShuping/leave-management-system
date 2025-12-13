@@ -39,7 +39,11 @@
 -Sick leave(30 days)
 -Family Responsibility(3 days)
 -Maternity leave(130 days)
-
+### Completed
+- Database schema design and implementation
+- Entity Framework Core setup with SQL Server LocalDB
+- Database seeding (holidays, employees, leave balance)
+- Sample data: 6 employees,116 holidays, 24 leave balance records
 ## Getting Started
 
 ### Prerequisities
