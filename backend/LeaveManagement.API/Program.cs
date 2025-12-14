@@ -1,4 +1,5 @@
 using LeaveManagement.API.Data;
+using LeaveManagement.API.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Add this line:
+builder.Services.AddScoped<IBusinessDaysCalculator, BusinessDaysCalculator>();
 
 // Add services to the container
 builder.Services.AddControllers();

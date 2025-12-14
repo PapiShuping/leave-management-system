@@ -10,12 +10,12 @@
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string Reason { get; set; }
-        public string? Filepath { get; set; }
+        public string? FilePath { get; set; }
         public string Status { get; set; } = "pending";
         public string? ApprovedBy { get; set; }
         public string? RejectComment { get; set; }
         public DateTime CreatedAt { get; set; }= DateTime.Now;
-        public int DaysTaken {  get; set; }
+        public int? DaysTaken {  get; set; }
 
         //Navigation Property
         public virtual Employee? Employee { get; set; }
